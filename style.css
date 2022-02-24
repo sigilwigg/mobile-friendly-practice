@@ -1,0 +1,58 @@
+html, body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+
+body, header, footer {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    justify-content: space-evenly;
+}
+
+header, footer {
+    position: relative;
+    justify-content: center;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+svg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header, footer, section {
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+}
+
+header h1 {
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    height: 80vh;
+}
+
+footer {
+    height: 20vh;
+    color: white;
+    background: darkblue;
+}
