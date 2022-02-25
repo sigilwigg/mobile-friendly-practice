@@ -21,7 +21,14 @@ header, footer {
     justify-content: center;
 }
 
+header, footer, section {
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+}
+
 header {
+    height: fit-content;
     top: 0;
 }
 
@@ -31,24 +38,34 @@ footer {
 
 svg {
     z-index: -1;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-}
-
-header, footer, section {
-    align-items: center;
     width: 100%;
-    height: 40vh;
+    height: auto;
 }
 
 header h1 {
+    position: absolute;
     color:white;
     font-family: 'Roboto', sans-serif;
 }
 
 section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     height: 80vh;
+    padding: 0 15% 0 15%;
+    box-sizing: border-box;
+}
+
+section div:nth-child(2) {
+    text-align: right;
+}
+
+section h3 {
+    color: lightseagreen;
 }
 
 footer {
